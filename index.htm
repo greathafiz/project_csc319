@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <title>UNIVERSITY OF ILORIN - Group 10</title>
+    <title>CSC 319 - Group 10</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -210,26 +210,28 @@
         <h1>Application Form</h1>
       </div>
 
-      <div class="form" id="form">
+
+      <form id="form" action="#" method="get">
+      <div class="form">
         <div class="inputfield">
           <label for="fname">First Name:</label>
-          <input type="text" name="fname" id="fname" class="input" />
+          <input type="text" name="fname" id="fname" class="input" required/>
         </div>
 
         <div class="inputfield">
           <label for="lname">Last Name:</label>
-          <input type="text" name="lname" id="lname" class="input" />
+          <input type="text" name="lname" id="lname" class="input" required/>
         </div>
 
         <div class="inputfield">
           <label for="bdate">Birth Date:</label>
-          <input type="date" name="bdate" id="bdate" class="input" />
+          <input type="date" name="bdate" id="bdate" class="input" required/>
         </div>
 
         <div class="inputfield">
           <label for="gender">Gender:</label>
           <div class="custom-select">
-            <select name="gender" id="gender">
+            <select name="gender" id="gender" required="">
               <option value="">Select</option>
               <option value="Male">Male</option>
               <option value="Female">Female</option>
@@ -238,19 +240,19 @@
         </div>
 
         <div class="inputfield">
-          <label for="fname">Email:</label>
-          <input type="email" name="email" id="email" class="input" />
+          <label for="email">Email:</label>
+          <input type="email" name="email" id="email" class="input" required/>
         </div>
 
         <div class="inputfield">
-          <label for="fname">Phone Number:</label>
-          <input type="tel" name="pnumber" id="pnumber" class="input" />
+          <label for="pnumber">Phone Number:</label>
+          <input type="tel" name="pnumber" id="pnumber" class="input" required/>
         </div>
 
         <div class="inputfield">
           <label for="course">Desired Course:</label>
           <div class="custom-select">
-            <select name="course" id="course">
+            <select name="course" id="course" required="">
               <option value="">Select</option>
               <option value="Medicine and Surgery">Medicine and Surgery</option>
               <option value="Computer Science">Computer Science</option>
@@ -272,6 +274,7 @@
         </div>
       </div>
     </div>
+  </form>
 
     <footer class="footer" id="about">
       <h3>About Us</h3>
@@ -285,7 +288,7 @@
         <i class="bi bi-instagram"></i>
         <i class="bi bi-twitter"></i>
         <i class="bi bi-linkedin"></i>
-        <p>&copy; Group 10, CSC 319</p>
+        <p>&copy; Group 10; CSC 319</p>
       </div>
     </footer>
 

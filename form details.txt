@@ -1,9 +1,10 @@
 Input fields for the form:
 
--Name
+-First Name
+-Last Name
 -Birth Date(month/year)
+-Gender
 -E-mail
 -Phone Number
--Address
 -Course of choice (5 options: Masscom, cs, ics, tcs, lis, edutech,
  pfa, medicine, elect elect, anatomy)
