@@ -46,7 +46,7 @@ document.querySelector("#form").addEventListener("submit", async (e) => {
   inputs.forEach((input) => (input.value = ""));
 
   try {
-    const response = await fetch("http://localhost/uni_website/project.php", {
+    const response = await fetch("./project.php", {
       method: "POST",
       body: formData,
     });
@@ -95,7 +95,7 @@ document.querySelector("#form").addEventListener("submit", async (e) => {
 
 //       inputs.forEach(input => input.value = '');
 
-//   fetch("http://localhost/uni_website/project.php", {
+//   fetch("./project.php", {
 //     method: "POST",
 //     body: formData
 //   })
