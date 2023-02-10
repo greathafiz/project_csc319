@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
+    <link type="text/css" rel="stylesheet" href="style.css" />
     <title>CSC 319 - Group 10</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -19,6 +19,7 @@
       crossorigin="anonymous"
     />
   </head>
+
   <body>
     <header class="header">
       <nav>
@@ -28,9 +29,10 @@
         <div class="nav-links" id="navLinks">
           <ul>
             <li><a href="#">Home</a></li>
-            <li><a href="#about">About</a></li>
             <li><a href="#course">Careers</a></li>
             <li><a href="#facilities">Facilities</a></li>
+            <li><a href="#testimonials">Testimonials</a></li>
+            <li><a href="#about">About</a></li>
           </ul>
         </div>
         <i
@@ -54,9 +56,10 @@
           ></i>
           <ul>
             <li><a href="#">Home</a></li>
-            <li><a href="#about">About</a></li>
             <li><a href="#course">Careers</a></li>
             <li><a href="#facilities">Facilities</a></li>
+            <li><a href="#testimonials">Testimonials</a></li>
+            <li><a href="#about">About</a></li>
           </ul>
         </div>
       </div>
@@ -69,7 +72,7 @@
           Quo, quaerat ipsam!
         </p>
         <div class="btn-div">
-          <a href="#form" class="hero-btn">Apply For Admission</a>
+          <a href="#form_wrapper" class="hero-btn">Apply For Admission</a>
         </div>
       </div>
     </header>
@@ -129,7 +132,7 @@
         </div>
 
         <div class="facilities-col">
-          <img src="images/basketball.png" alt="library" />
+          <img src="images/basketball.png" alt="basketball" />
           <h3>Basketball Court</h3>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe,
@@ -138,7 +141,7 @@
         </div>
 
         <div class="facilities-col">
-          <img src="images/cafeteria.png" alt="library" />
+          <img src="images/cafeteria.png" alt="cafeteria" />
           <h3>Cafeteria</h3>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe,
@@ -150,7 +153,7 @@
 
     <!-- testimonials -->
 
-    <section class="testimonials">
+    <section class="testimonials" id="testimonials">
       <h1>What Our Students Say</h1>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, id.</p>
 
@@ -180,7 +183,7 @@
               fugiat voluptatibus alias? Vitae pariatur quibusdam iusto corrupti
               tempore. Amet, exercitationem.
             </p>
-            <h3>Ade uthman</h3>
+            <h3>Ade Uthman</h3>
             <i class="bi bi-star-fill"></i>
             <i class="bi bi-star-fill"></i>
             <i class="bi bi-star-fill"></i>
@@ -200,59 +203,86 @@
         challenge yourself
       </p>
       <div class="btn-div cta-btn-div">
-        <a href="#form" class="hero-btn">Apply For Admission</a>
+        <a href="#form_wrapper" class="hero-btn">Apply For Admission</a>
       </div>
     </section>
 
     <!-- registration form -->
-    <div class="wrapper">
+
+    <div class="wrapper" id="form_wrapper">
       <div class="title">
         <h1>Application Form</h1>
       </div>
 
+      <form name="form" id="form">
+        <div class="form">
+          <div class="inputfield">
+            <label for="first_name" id="first_name">First Name</label>
+            <input
+              type="first_name"
+              name="first_name"
+              id="first_name"
+              class="input"
+              required
+            />
+          </div>
 
-      <form id="form" action="#" method="get">
-      <div class="form">
-        <div class="inputfield">
-          <label for="fname">First Name:</label>
-          <input type="text" name="fname" id="fname" class="input" required/>
-        </div>
+          <div class="inputfield">
+            <label for="last_name" id="last_name">Last Name</label>
+            <input
+              type="last_name"
+              name="last_name"
+              id="last_name"
+              class="input"
+              required
+            />
+          </div>
 
-        <div class="inputfield">
-          <label for="lname">Last Name:</label>
-          <input type="text" name="lname" id="lname" class="input" required/>
-        </div>
+          <div class="inputfield">
+            <label for="birth_date">Birth Date:</label>
+            <input
+              type="date"
+              name="birth_date"
+              id="birth_date"
+              class="input"
+              required
+            />
+          </div>
 
-        <div class="inputfield">
-          <label for="bdate">Birth Date:</label>
-          <input type="date" name="bdate" id="bdate" class="input" required/>
-        </div>
-
-        <div class="inputfield">
-          <label for="gender">Gender:</label>
-          <div class="custom-select">
-            <select name="gender" id="gender" required="">
+          <div class="inputfield">
+            <label for="gender">Gender:</label>
+            <select name="gender" id="gender" required>
               <option value="">Select</option>
               <option value="Male">Male</option>
               <option value="Female">Female</option>
             </select>
           </div>
-        </div>
 
-        <div class="inputfield">
-          <label for="email">Email:</label>
-          <input type="email" name="email" id="email" class="input" required/>
-        </div>
+          <div class="inputfield">
+            <label for="email">Email:</label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              class="input"
+              required
+            />
+          </div>
 
-        <div class="inputfield">
-          <label for="pnumber">Phone Number:</label>
-          <input type="tel" name="pnumber" id="pnumber" class="input" required/>
-        </div>
+          <div class="inputfield">
+            <label for="phone_number">Phone Number:</label>
+            <input
+              type="tel"
+              name="phone_number"
+              id="phone_number"
+              class="input"
+              required
+            />
+          </div>
 
-        <div class="inputfield">
-          <label for="course">Desired Course:</label>
-          <div class="custom-select">
-            <select name="course" id="course" required="">
+          <div class="inputfield">
+            <label for="desired_course">Desired Course:</label>
+            <select name="desired_course" id="desired_course" required>
               <option value="">Select</option>
               <option value="Medicine and Surgery">Medicine and Surgery</option>
               <option value="Computer Science">Computer Science</option>
@@ -261,20 +291,35 @@
               <option value="Mass Communication">Mass Communication</option>
             </select>
           </div>
-        </div>
 
-        <div class="inputfield">
-          <input
-            type="submit"
-            name="submit"
-            id="submit"
-            value="Apply"
-            class="btn"
-          />
+          <div class="inputfield">
+            <input
+              type="submit"
+              name="submit"
+              id="submit"
+              value="Apply"
+              class="btn"
+            />
+          </div>
         </div>
-      </div>
+      </form>
     </div>
-  </form>
+
+    <!-- response data -->
+
+    <div class="response-data">
+      <div style="display: flex">
+        <i class="bi bi-check" style="margin-right: 0"></i>
+        <div class="msg" style="margin-left: 0"></div>
+      </div>
+      <div id="first_name_output" class="user_data"></div>
+      <div id="last_name_output" class="user_data"></div>
+      <div id="birth_date_output" class="user_data"></div>
+      <div id="gender_output" class="user_data"></div>
+      <div id="email_output" class="user_data"></div>
+      <div id="phone_number_output" class="user_data"></div>
+      <div id="desired_course_output" class="user_data"></div>
+    </div>
 
     <footer class="footer" id="about">
       <h3>About Us</h3>
