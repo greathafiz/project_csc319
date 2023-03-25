@@ -41,7 +41,7 @@ document.querySelector("#form").addEventListener("submit", async (e) => {
     (element) => element.type !== "submit"
   );
 
-  // Different method (does not work 'option' inputs):
+  // Different method (does not work for 'option' inputs):
   // const inputs = document.querySelectorAll('#form input:not([type="submit"])')
   inputs.forEach((input) => (input.value = ""));
 
